@@ -1,36 +1,59 @@
 .recipe {
-  border-radius: 10px;
-  box-shadow: 0px 5px 20px rgb(71, 71, 71);
-  margin: 20px;
-  padding: 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-grow: 1;
-  background: white;
-  align-items: center;
-  min-width: 20%;
-  background-image: linear-gradient(135deg, #e2d1c3 20%, #fdfcfb 70%);
-}
-
-.header {
-  width: 30%;
+	border-radius: 10px;
+	box-shadow: 0px 5px 20px rgb(71, 71, 71);
+	margin: 20px;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-grow: 1;
+	background: white;
+	align-items: center;
+	min-width: 20%;
+	background-image: linear-gradient(135deg, #e2d1c3 20%, #fdfcfb 70%);
 }
 
 .list {
-  width: 40%;
-  font-size: 16px;
+	width: 40%;
+	font-size: 16px;
 }
 
 .image {
-  padding: 5px;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+	padding: 5px;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
 }
 
 .kcal {
-  width: 15%;
-  font-size: 35px;
-  font-weight: bold;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+	.recipe {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		min-width: 20%;
+	}
+	.header {
+		margin: 0 auto;
+		font-size: 25px;
+	}
+
+	.list {
+		width: 90%;
+		font-size: 16px;
+	}
+
+	.image {
+		width: 100px;
+		height: 100px;
+	}
+
+	.kcal {
+		margin: 0 auto;
+		font-size: 25px;
+	}
 }

@@ -1,60 +1,71 @@
 @import url("https://fonts.googleapis.com/css2?family=Recursive&display=swap");
 
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Recursive", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Recursive", sans-serif;
 }
 .App {
-  min-height: 100vh;
-  /* text-align: center; */
-  /* background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); */
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+	min-height: 100vh;
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
 }
 
 .logo {
-  position: absolute;
-  top: 0;
-  right: 5%;
-  width: 90px;
+	position: absolute;
+	top: 0;
+	right: 5%;
+	width: 90px;
 }
 
 .search-form {
-  margin: 0 auto;
-  min-height: 10vh;
-  max-width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	margin: 0 auto;
+	min-height: 10vh;
+	max-width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .search-bar {
-  font-family: "Recursive", sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  background-image: linear-gradient(135deg, #e2d1c3 20%, #fdfcfb 70%);
-  margin-right: 10px;
-  border-radius: 10px;
-  width: 50%;
-  border: none;
-  padding: 10px;
+	font-family: "Recursive", sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	background-image: linear-gradient(135deg, #e2d1c3 20%, #fdfcfb 70%);
+	margin-right: 10px;
+	border-radius: 10px;
+	width: 50%;
+	border: none;
+	padding: 10px;
 }
 
 .search-button {
-  font-family: "Recursive", sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: 10px;
-  background: #fdfcfb;
-  border: none;
-  padding: 10px 20px;
-  color: black;
+	font-family: "Recursive", sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	border-radius: 10px;
+	background: #fdfcfb;
+	border: none;
+	padding: 10px 20px;
+	color: black;
 }
 
 .recipes {
-  font-size: 15px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+	font-size: 15px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+	.search-form {
+		max-width: 60%;
+	}
+	.logo {
+		top: 0;
+		right: 0;
+		width: 70px;
+	}
 }
